@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggy Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center m-5">Piggy Bank </h1>
+    </header>
+    <main class="d-flex w-75 m-auto">
+        <section class="w-100">
+            <img class="w-100 rounded" src="images/money.jpeg" alt="">
+        </section>
+        <section class="w-100 bg-body-secondary border rounded p-4 mb-4">
+            <!-- Income section -->
+            <div class="container mx-3 my-4">
+                <h3 class="mb-4 fw-bold text-center">Income</h3>
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <h4>Income:</h4>
+                    </div>
+                    <div class="col-8 ">
+                        <input id="income-input" class="border border-black rounded-pill p-2 w-100 " type="text"
+                            value="0">
+                    </div>
+                </div>
+            </div>
+            <!--Expense Section-->
+            <div class="container mx-3 my-4">
+                <h3 class="mb-4 fw-bold text-center">Expenses</h3>
+                <div class="row align-items-center mb-4">
+                    <div class="col-3">
+                        <h4>Food:</h4>
+                    </div>
+                    <div class="col-8">
+                        <input id="food-expense-input" class="border border-black rounded-pill p-2 w-100 " type="text"
+                            value="0">
+                    </div>
+                </div>
+                <div class="row align-items-center mb-4">
+                    <div class="col-3">
+                        <h4>Rent:</h4>
+                    </div>
+                    <div class="col-8">
+                        <input id="rent-expense-input" class="border border-black rounded-pill p-2 w-100 " type="text"
+                            value="0">
+                    </div>
+                </div>
+                <div class="row align-items-center mb-4">
+                    <div class="col-3">
+                        <h4>Clothes:</h4>
+                    </div>
+                    <div class="col-8">
+                        <input id="cloth-expense-input" class="border border-black rounded-pill p-2 w-100" type="text"
+                            value="0">
+                    </div>
+                </div>
+
+            </div>
+            <!-- Calculate Button -->
+            <div class="text-center my-5">
+                <button id="calculate"
+                    class=" btn bg-warning rounded-pill px-4 py-2  fw-bold w-50 fs-5 ">Calculate</button>
+
+            </div>
+            <!-- Balance Inquiry -->
+            <div class="text-center">
+                <h4 class="my-5">Total Expenses: <span id="expenses-total">0</span></h4>
+                <h4 class="my-5">Balance: <span id="balance-total">0</span></h4>
+            </div>
+            <!-- Saving Section -->
+            <div class="text-center justify-content-center">
+                <h4>Save: <span><input id="saving-input" class=" border border-black rounded-pill px-2 w-25 fs-5"
+                            type="text" value="0">
+                    </span> % <span><button id="calculate-saving"
+                            class="border-0 bg-warning rounded-pill px-4 py-2 w-25 fw-semibold fs-5 ">Save</button></span>
+                </h4>
+            </div>
+            <div class="text-center mb-5">
+                <h4 class="my-4">Saving Amount: <span id="saving-total">0</span></h4>
+                <h4>Remaining Balance: <span id="remaining-total">0</span></h4>
+            </div>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
